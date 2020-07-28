@@ -1,0 +1,19 @@
+digraph Class{
+    rankdir=BT; // 箭头从下到上
+    // 默认方形
+    node [shape = "record", fontname = "Consolas"]
+    // 默认空箭头
+    edge [arrowhead = "empty", fontname = "Consolas"]
+
+    IStream [label = "IStream"]
+    OStream [label = "OStream"]
+    cin [label = "cin"]
+    cout [label = "cout"]
+    cerr [label = "cerr"]
+    clog [label = "clog"]
+    // 继承 extends
+    cin -> IStream
+    cout -> OStream
+    cerr -> OStream
+    clog -> OStream
+}
