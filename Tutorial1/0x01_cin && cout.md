@@ -13,5 +13,21 @@
 |标准错误 | **cerr** | ostream| std|
 |标准日志 | **clog** | ostream| std|
 
-## 10%: 从istream 和 ostream说起
+## 10%: 从 **istream** 和 **ostream** 说起
 ### stream(流) === \['a','b','c'...'z'\](字符序列)
+
+## 50%: 代码实例
+```
+#include <algorithm>
+#include <iostream>
+using namespace std;
+
+int main(){
+    std::cout << "Enter two numbers:" << std::endl;
+    auto v1 = 0, v2 = 0;
+    std::cin >> v1 >> v2;
+    std::cout << "The sum of " << v1 << " and " << v2
+                << " is " << v1 + v2 << std::endl;
+    return 0;
+}
+```
